@@ -57,9 +57,3 @@ The bot isn't just a generic Claude wrapper. It’s tuned to be **AniSage Sensei
    npm run dev
    ```
 
-## Deployment
-
-The project is configured for **Vercel**. The `vercel.json` file handles routing for both the React app and the server-side proxy.
-
----
-*Created with passion for the medium.*
