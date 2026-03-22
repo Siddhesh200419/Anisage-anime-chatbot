@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+JP:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --ink: #0a0a0f;
+  --ink-mid: #12121a;
+  --ink-light: #1e1e2e;
+  --panel: #16161f;
+  --border: #2a2a3a;
+  --accent: #ff3c3c;
+  --accent-gold: #f5c842;
+  --accent-blue: #3c8cff;
+  --text-primary: #f0f0f0;
+  --text-secondary: #8888a0;
+  --text-muted: #4a4a60;
+  --white: #ffffff;
+  --font-display: 'Bangers', cursive;
+  --font-body: 'Noto Sans JP', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--ink);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+@media (max-width: 640px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
